@@ -1,7 +1,3 @@
-GitHub repon için profesyonel, "Mühendislik Portfolyosu" tadında bir **README.md** hazırladım. Bu metni direkt kopyalayıp GitHub'daki `README.md` dosyanın içine yapıştırabilirsin.
-
----
-
 ```markdown
 # Comparative Analysis of SSSP Algorithms: Dijkstra, Bellman-Ford, and BMSSP
 
@@ -40,7 +36,7 @@ To ensure a fair and transparent comparison:
 │   ├── Memory_Usage.png
 │   ├── Scalability_Curve.png
 │   ├── Efficiency_Scatter.png
-│   └── Source_Stability.png
+│   └── Source_Stability_NE.png
 └── README.md               # Project documentation
 ```
 
