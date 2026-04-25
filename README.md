@@ -61,4 +61,3 @@ For a detailed discussion on the "Time-Memory Trade-off" and theoretical vs. pra
 1. 9th DIMACS Implementation Challenge - Shortest Paths.
 2. Duan et al. "Breaking the Sorting Barrier for Directed Single-Source Shortest Paths," STOC 2025.
 3. [DMMSY-SSSP Reference Implementation Repository](https://github.com/danalec/DMMSY-SSSP).
-```
