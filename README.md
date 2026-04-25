@@ -51,7 +51,7 @@ This box plot confirms the operational consistency of Dijkstra and BMSSP regardl
 ![Source Stability](./results/Source_Stability_NE.png)
 
 ## 📄 Full Report
-For a detailed discussion on the "Time-Memory Trade-off" and theoretical vs. practical observations, please refer to the [Full Analysis Report](./reports/SSSP_Final_Report.pdf).
+For a detailed discussion on the "Time-Memory Trade-off" and theoretical vs. practical observations, please refer to the [Full Analysis Report](./reports/SSSP_Report.pdf).
 
 ## 🔗 References
 1. 9th DIMACS Implementation Challenge - Shortest Paths.
