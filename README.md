@@ -62,10 +62,3 @@ For a detailed discussion on the "Time-Memory Trade-off" and theoretical vs. pra
 2. Duan et al. "Breaking the Sorting Barrier for Directed Single-Source Shortest Paths," STOC 2025.
 3. [DMMSY-SSSP Reference Implementation Repository](https://github.com/danalec/DMMSY-SSSP).
 ```
-
----
-
-### Küçük Bir İpucu:
-README içine eklediğim `![Scalability Curve](./results/Scalability_Curve.png)` gibi kodların çalışması için, `/results/` klasöründeki dosyalarının isimlerinin bu metindeki isimlerle (ve büyük-küçük harfleriyle) **tamamen aynı** olduğundan emin ol. Eğer isimleri değiştirdiysen bu satırları ona göre güncelle.
-
-Bu README ile repon, sadece bir ödev değil; profesyonel bir **benchmark projesi** gibi görünecek! 🚀
