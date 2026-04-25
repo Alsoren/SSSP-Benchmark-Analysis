@@ -52,10 +52,10 @@ The following curve illustrates how algorithms respond as graph sizes grow from 
 
 ### Source Stability
 This box plot confirms the operational consistency of Dijkstra and BMSSP regardless of the starting node, contrasted with Bellman-Ford's high sensitivity.
-![Source Stability](./results/Source_Stability.png)
+![Source Stability](./results/Source_Stability_NE.png)
 
 ## 📄 Full Report
-For a detailed discussion on the "Time-Memory Trade-off" and theoretical vs. practical observations, please refer to the [Full Analysis Report](./reports/SSSP_Final_Report_with_name_rev15.pdf).
+For a detailed discussion on the "Time-Memory Trade-off" and theoretical vs. practical observations, please refer to the [Full Analysis Report](./reports/SSSP_Final_Report.pdf).
 
 ## 🔗 References
 1. 9th DIMACS Implementation Challenge - Shortest Paths.
