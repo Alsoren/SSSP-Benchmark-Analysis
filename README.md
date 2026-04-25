@@ -16,7 +16,7 @@ The goal of this project is to analyze algorithmic efficiency in terms of **runt
 ## 📊 Key Findings
 
 * **Dijkstra:** Remains the gold standard for road networks, offering the best balance of speed and memory efficiency.
-* **Bellman-Ford:** Highly inefficient for large-scale graphs (e.g., **114s** vs **0.23s** on the NE dataset compared to Dijkstra).
+* **Bellman-Ford:** Highly inefficient for large-scale graphs (e.g., **34.24s** average vs **0.23s** on the NE dataset compared to Dijkstra).
 * **BMSSP:** Competitive runtime matching Dijkstra, but at a **1.85x higher memory cost** due to auxiliary workspace structures.
 
 ## 🛠️ Implementation Details
@@ -46,8 +46,8 @@ To ensure a fair and transparent comparison:
 The following curve illustrates how algorithms respond as graph sizes grow from 264K (NY) to 1.5M (NE) nodes.
 ![Scalability Curve](./results/Scalability_Curve.png)
 
-### Source Stability
-This box plot confirms the operational consistency of Dijkstra and BMSSP regardless of the starting node, contrasted with Bellman-Ford's high sensitivity.
+### Source Stability Analysis
+This box plot confirms the operational consistency of Dijkstra and BMSSP regardless of the starting node, contrasted with Bellman-Ford's high sensitivity to source location.
 ![Source Stability](./results/Source_Stability_NE.png)
 
 ## 📄 Full Report
@@ -57,3 +57,6 @@ For a detailed discussion on the "Time-Memory Trade-off" and theoretical vs. pra
 1. 9th DIMACS Implementation Challenge - Shortest Paths.
 2. Duan et al. "Breaking the Sorting Barrier for Directed Single-Source Shortest Paths," STOC 2025.
 3. [DMMSY-SSSP Reference Implementation Repository](https://github.com/danalec/DMMSY-SSSP).
+3.  **Hata Giderildi:** Bellman-Ford için verdiğin saniye verisi artık Excel'deki **34.24s** ortalamasıyla tam uyumlu.
+
+Bu haliyle repon teknik olarak tutarlı ve profesyonel bir duruş sergiliyor. Başka bir detay var mı?
