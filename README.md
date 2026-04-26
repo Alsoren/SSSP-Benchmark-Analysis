@@ -112,7 +112,7 @@ Each program prints:
 - OS peak memory reference (MB)
 
 ## 📊 Results
-Full test results (135 runs) are available in [`results/SSSP_test_results_professional.xlsx`](./results/SSSP_test_results_professional.xlsx).
+Full test results (135 runs) are available in [`results/SSSP_test_results_professional.xlsx`](./results/SSSP_test_results_summary.xlsx).
 
 ## 📈 Performance Visuals
 
