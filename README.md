@@ -111,6 +111,8 @@ Each program prints:
 - Estimated total memory (MB)
 - OS peak memory reference (MB)
 
+## 📊 Results
+Full test results (135 runs) are available in [`results/SSSP_test_results_professional.xlsx`](./results/SSSP_test_results_professional.xlsx).
 
 ## 📈 Performance Visuals
 
