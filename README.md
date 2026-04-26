@@ -40,6 +40,78 @@ To ensure a fair and transparent comparison:
 └── README.md               # Project documentation
 ```
 
+## Algorithms
+
+| Algorithm | Complexity | Source |
+|---|---|---|
+| Dijkstra | O((V+E) log V) | Implemented from scratch |
+| Bellman-Ford | O(V·E) | Implemented from scratch |
+| BMSSP/DMMSY | O(m log²/³ n) | Adapted from [danalec/DMMSY-SSSP](https://github.com/danalec/DMMSY-SSSP) |
+
+## Datasets
+
+Download from the [9th DIMACS Implementation Challenge](http://users.diag.uniroma1.it/challenge9/download.shtml):
+
+- `USA-road-d.NY.gr` — New York City (264,346 nodes, 733,846 edges)
+- `USA-road-d.COL.gr` — Colorado (435,666 nodes, 1,057,066 edges)
+- `USA-road-d.NE.gr` — Northeast USA (1,524,453 nodes, 3,897,636 edges)
+
+Place the downloaded `.gr` files in the same directory as the source files before compiling.
+
+## Requirements
+
+- Linux or WSL (Windows Subsystem for Linux)
+- g++ with C++17 support
+- gcc (for compiling the DMMSY C library files)
+
+## Build & Run
+
+### Dijkstra
+
+```bash
+g++ -O2 -std=c++17 -o dijkstra src/djkstra_bellek.cpp
+./dijkstra
+```
+
+### Bellman-Ford
+
+```bash
+g++ -O2 -std=c++17 -o bellmanford src/bellman-ford.cpp
+./bellmanford
+```
+
+### BMSSP/DMMSY
+
+```bash
+g++ -O2 -std=c++17 -o dmmsy src/dmssy.cpp \
+    src/dmmsy_lib/common.c \
+    src/dmmsy_lib/dmmsy_opt.c \
+    src/dmmsy_lib/dmmsy_res.c
+./dmmsy
+```
+
+## Changing Source Node and Dataset
+
+To change the dataset or source node, open the corresponding `.cpp` file and modify these two lines near the bottom of `main()`:
+
+```cpp
+string filename = "USA-road-d.NE.gr";  // change dataset here
+int src = 1372007;                      // change source node here (0-based)
+```
+
+Then recompile and run.
+
+## Output Format
+
+Each program prints:
+
+- Runtime (seconds)
+- Graph storage memory (MB)
+- Algorithm working memory (MB)
+- Estimated total memory (MB)
+- OS peak memory reference (MB)
+
+
 ## 📈 Performance Visuals
 
 ### Scalability Analysis
